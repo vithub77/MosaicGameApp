@@ -164,7 +164,7 @@ class MosaicGameApp:
 
 
 def main_gui(page: ft.Page):
-    app = MosaicGameApp(page)
+    MosaicGameApp(page)
 
 
 if __name__ == "__main__":
