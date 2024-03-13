@@ -2,7 +2,7 @@ import numpy as np
 import os
 
 from center_img import ImageDATA
-from mosaic_game.back_pillow import create_img_mosaic
+from back_pillow import create_img_mosaic
 
 
 class GamePlay:
