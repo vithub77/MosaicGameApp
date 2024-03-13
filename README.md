@@ -1,9 +1,6 @@
-# A my-app Flet app
+# My app Flet
+## не большая игра собрать картинку из пазлов
 
-An example of a minimal Flet app.
-
-To run the app:
-
-```
-flet run [app_directory]
-```
+1. Устанавливаем зависимости requirements.txt
+2. Запускаемся в main_gui.py
+3. enjoy the game
