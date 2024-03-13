@@ -99,11 +99,14 @@ class MosaicGameApp:
         return file_picker
 
     def on_download_result(self, e: ft.FilePickerResultEvent):
-        shutil.copy(e.files[0].path, f'assets/user/user.png')
+        try:
+            shutil.copy(e.files[0].path, f'assets/user/user.png')
 
-        self.dt_img.data_dict['name_dir'] = self.dt_img.data_dict['name_img'] = 'user'
-        self.gp.set_img_mosaic()
-        self.update_center(True)
+            self.dt_img.data_dict['name_dir'] = self.dt_img.data_dict['name_img'] = 'user'
+            self.gp.set_img_mosaic()
+            self.update_center(True)
+        except TypeError:
+            pass
 
     def choose_items(self, e):
         self.gp.clear_folder()
