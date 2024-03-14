@@ -19,7 +19,7 @@ class MosaicGameApp:
 
     def create_top_menu(self):
         but_download = ft.ElevatedButton('Choose Image', bgcolor=ft.colors.CYAN, icon="add", color=ft.colors.WHITE,
-                                         on_click=lambda _: self.file_picker.pick_files(allow_multiple=True),
+                                         on_click=lambda _: self.file_picker.pick_files(allow_multiple=False),
                                          expand=True)
         t = ft.Text(value='Amount of elements: W x H', theme_style=ft.TextThemeStyle.BODY_LARGE,
                     offset=(0.05, 0),
